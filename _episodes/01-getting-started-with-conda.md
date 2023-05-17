@@ -41,6 +41,35 @@ A bit further into your programming career you may notice/have noticed that many
 
 Many packages are being further developed all the time, generating different *versions* of packages. During development it may happen that a function call changes and/or functionalities are added or removed. If one package can depend on another, this may create issues. Therefore it is not only important to know that e.g. Scipy depends on numpy and matplotlib, but also that it depends on numpy version >= 1.6 and matplotlib version >= 1.1. Numpy version 1.5 in this case would not be sufficient.
 
+### Package management
+
+A good package management system greatly simplifies the process of installing software by...
+
+1.  identifying and installing compatible versions of software and all required dependencies.
+2.  handling the process of updating software as more recent versions become available.
+
+If you use some flavor of Linux, then you are probably familiar with the package manager for your
+Linux distribution (i.e., `apt` on Ubuntu, `yum` on CentOS); if you are a Mac OSX user then you
+might be familiar with the [Home Brew Project](https://brew.sh/) which brings a Linux-like package
+management system to Mac OS; if you are a Windows OS user, then you may not be terribly familiar
+with package managers as there isn't really a standard package manager for Windows (although there
+is the [Chocolatey Project](https://chocolatey.org/)).
+
+Operating system package management tools are great but these tools actually solve a more general
+problem than you often face as a (data) scientist.  As a (data) scientist you typically use one or
+two core scripting languages (i.e.,  Python, R, SQL). Each scripting language has multiple
+versions that can potentially be installed and each scripting language will also have a large
+number of third-party packages that will need to be installed. The exact version of your core
+scripting language(s) and additional, third-party packages will also probably change from project
+to project.
+
+> ## Package management systems for Python
+> Also here, Conda is not the only way; Python for example has many more ways of working with packages:
+> * [pip](https://pip.pypa.io/en/stable/)
+> * [Poetry](https://python-poetry.org/)
+> * ...
+{: .callout}
+
 ### Environments
 
 When starting with programming we may not use many packages yet and the installation may be straightforward. But for most people, there comes a time when one version of a package or also the programming language is not enough anymore. You may find an older tool that depends on an older version of your programming language (e.g. Pyhton 2.7), but many of your other tools depend on a newer version (e.g. Python 3.6). You could now start up another computer or virtual machine to run the other version of the programming language, but this is not very handy, since you may want to use the tools together in a workflow later on. Here, *environments* are one solution to the problem.
@@ -78,35 +107,6 @@ required dependencies that are all mutually compatible.
 > * [pipenv](https://pipenv.pypa.io/en/latest/)
 > * [venv](https://docs.python.org/3/library/venv.html)
 > * [pyenv](https://github.com/pyenv/pyenv)
-> * ...
-{: .callout}
-
-### Package management
-
-A good package management system greatly simplifies the process of installing software by... 
-
-1.  identifying and installing compatible versions of software and all required dependencies. 
-2.  handling the process of updating software as more recent versions become available.
-
-If you use some flavor of Linux, then you are probably familiar with the package manager for your 
-Linux distribution (i.e., `apt` on Ubuntu, `yum` on CentOS); if you are a Mac OSX user then you 
-might be familiar with the [Home Brew Project](https://brew.sh/) which brings a Linux-like package 
-management system to Mac OS; if you are a Windows OS user, then you may not be terribly familiar 
-with package managers as there isn't really a standard package manager for Windows (although there 
-is the [Chocolatey Project](https://chocolatey.org/)).  
-
-Operating system package management tools are great but these tools actually solve a more general 
-problem than you often face as a (data) scientist.  As a (data) scientist you typically use one or 
-two core scripting languages (i.e.,  Python, R, SQL). Each scripting language has multiple 
-versions that can potentially be installed and each scripting language will also have a large 
-number of third-party packages that will need to be installed. The exact version of your core 
-scripting language(s) and additional, third-party packages will also probably change from project 
-to project.
-
-> ## Package management systems for Python
-> Also here, Conda is not the only way; Python for example has many more ways of working with packages:
-> * [pip](https://pip.pypa.io/en/stable/)
-> * [Poetry](https://python-poetry.org/)
 > * ...
 {: .callout}
 
