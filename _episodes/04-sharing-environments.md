@@ -12,7 +12,7 @@ objectives:
 - "Create a custom kernel for a Conda environment for use inside JupyterLab and Jupyter notebooks."
 keypoints:
 - "Sharing Conda environments with other researchers facilitates the reprodicibility of your research."
-- "Create an`environment.yml` file that describes your project's software environment."
+- "Environment files explicitly describe your project's software environment."
 ---
 
 ## Working with environment files
