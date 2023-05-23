@@ -425,7 +425,7 @@ your `~/miniconda3/env/` folder, you’ll have to give each of them a different 
 > > project-dir $ conda create --prefix ./env \
 > > python=3.6 \
 > > matplotlib=3.1 \
-> > tensorflow=2.0 \
+> > tensorflow=2.4
 > > ~~~
 > > {: .language-bash}
 > >
