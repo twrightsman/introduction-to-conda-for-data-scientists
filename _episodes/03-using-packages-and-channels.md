@@ -145,7 +145,7 @@ $ conda install r-tidyverse=1.3 --channel conda-forge --prefix ./env
 > multiple times.
 >
 > ~~~
-> $ conda install scipy=1.6 --channel conda-forge --channel bioconda
+> $ conda install bedtools=2.31 --channel conda-forge --channel bioconda
 > ~~~
 > {: .language-bash}
 >
@@ -154,7 +154,6 @@ $ conda install r-tidyverse=1.3 --channel conda-forge --prefix ./env
 > bioinformatics software. For those interested in learning more about the Bioconda project,
 > checkout the project's [GitHub](https://bioconda.github.io/) page.
 >
-> Please note that in our example, adding `bioconda` channel is irrelevant because `scipy` is no longer available on `bioconda` channel.
 {: .callout}
 
 ## My package isn't available on the `defaults` channel! What should I do?
