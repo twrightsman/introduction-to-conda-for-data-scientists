@@ -269,47 +269,6 @@ from the environment.
 > {: .language-bash}
 {: .callout}
 
-> ## Add Dask to the environment to scale up your analytics
->
-> Add to the `scikit-env` environment file and update the environment. [Dask](https://dask.org/)
-> provides advanced parallelism for data science workflows enabling performance at scale for the
-> core Python data science tools such as Numpy Pandas, and Scikit-Learn.
->
-> > ## Solution
-> >
-> > The `environment.yml` file should now look as follows.
-> >
-> > ~~~
-> > name: scikit-learn-env
-> >
-> > dependencies:
-> >   - dask=2.16
-> >   - dask-ml=1.4
-> >   - ipython=7.13
-> >   - matplotlib=3.1
-> >   - pandas=1.0
-> >   - pip=20.0
-> >   - python=3.6
-> >   - scikit-learn=0.22
-> > ~~~
-> >
-> > You could use the following command, that will rebuild the environment from scratch with the
-> > new Dask dependencies:
-> >
-> > ~~~
-> > $ conda env create --prefix ./env --file environment.yml --force
-> > ~~~
-> > {: .language-bash}
-> >
-> > Or, if you just want to update the environment in-place with the new Dask dependencies, you can use:
-> >
-> > ~~~
-> > $ conda env update --prefix ./env --file environment.yml  --prune
-> > ~~~
-> > {: .language-bash}
-> {: .solution}
-{: .challenge}
-
 > ## Installing via `pip` in `environment.yml` files
 >
 > Since you write `environment.yml` files for all of your projects, you might be wondering how
