@@ -516,7 +516,7 @@ For more on modifying your `.condarc` file, see the
 > > project-dir $ conda create --prefix ./env \
 > > > r-base \
 > > > r-tidyverse \
-> > > r-sparklyr \
+> > > r-sparklyr
 > > ~~~
 > > {: .language-bash}
 > >
