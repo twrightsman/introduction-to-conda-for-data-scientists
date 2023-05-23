@@ -141,7 +141,7 @@ because it is a required dependency of at least one of the listed packages.
 
 > ## Creating a new environment
 >
-> Create a new environment called "machine-learning-env" with Python and the most current versions
+> Create a new environment called "machine-learning-env-latest" with Python and the most current versions
 > of [IPython](https://ipython.org/), [Matplotlib](https://matplotlib.org/),
 > [Pandas](https://pandas.pydata.org/), [Numba](https://numba.pydata.org/) and
 > [Scikit-Learn](https://scikit-learn.org/stable/index.html).
@@ -162,8 +162,18 @@ because it is a required dependency of at least one of the listed packages.
 > > {: .language-bash}
 > >
 > > Since no version numbers are provided for any of the Python packages, Conda will download the
-> > most current, mutually compatible versions of the requested packages. However, since it is best
-> > practice to always provide explicit version numbers, you should prefer the following solution.
+> > most current, mutually compatible versions of the requested packages.
+> {: .solution}
+{: .challenge}
+
+> ## Creating a new environment with specific versions
+>
+> Create a new environment called "machine-learning-env" with Python 3.8,
+> [IPython](https://ipython.org/) 7.19, [Matplotlib](https://matplotlib.org/) 3.3,
+> [Pandas](https://pandas.pydata.org/) 1.2, [Numba](https://numba.pydata.org/) 0.51 and
+> [Scikit-Learn](https://scikit-learn.org/stable/index.html) 0.23.
+>
+> > ## Solution
 > >
 > > ~~~
 > > $ conda create --name machine-learning-env \
@@ -175,8 +185,6 @@ because it is a required dependency of at least one of the listed packages.
 > >  numba=0.51
 > > ~~~
 > > {: .language-bash}
-> >
-> > However, please be aware that the version numbers for each packages may not be the latest available and would need to be adjusted.
 > >
 > {: .solution}
 {: .challenge}
@@ -312,7 +320,7 @@ $ conda install scikit-learn=0.22
 > >
 > > You can install Dask into `machine-learning-env` using the `conda install` command as follow.
 > > ~~~
-> > $ conda install --name machine-learning-env dask=2.16
+> > $ conda install --name machine-learning-env dask=2020.12
 > > ~~~
 > > {: .language-bash}
 > >
@@ -408,7 +416,7 @@ your `~/miniconda3/env/` folder, you’ll have to give each of them a different 
 > {: .language-bash}
 >
 > Next, create a new environment inside the newly created `project-dir` in a sub-directory called
-> `env` an install Python 3.6, version 3.1 of Matplotlib, and version 2.0 of
+> `env` an install Python 3.6, version 3.1 of Matplotlib, and version 2.4 of
 > [TensorFlow](https://www.tensorflow.org/).
 >
 > > ## Solution
