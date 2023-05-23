@@ -391,6 +391,8 @@ environment.
 > Activate the `machine-learning-env` you created in a previous challenge and use `pip` to install
 > `combo`.
 >
+> Hint: You may need to install `pip` into the environment first using Conda.
+>
 > > ## Solution
 > >
 > > The following commands will activate the `basic-scipy-env` and install `combo`.
