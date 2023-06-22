@@ -274,8 +274,8 @@ The [conda documentation][conda-install-docs] has a nice decision tree that desc
 > > $ conda create --prefix ./env --channel pytorch \
 > >  python=3.6 \
 > >  jupyterlab=1.0 \
-> >  pytorch=1.1 \
-> >  torchvision=0.3 \
+> >  pytorch=1.5 \
+> >  torchvision=0.6 \
 > >  matplotlib=3.1
 > > ~~~
 > > {: .language-bash}
